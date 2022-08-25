@@ -55,6 +55,7 @@ public class Test {
     private static void test(String text, Set<String> set, List<String> expected) {
         List<String> list = split(text, set);
 
+        System.out.println("text " + text);
         System.out.println("list 1 " + expected);
         System.out.println("list 2 " + list);
         System.out.println(check(expected, list) ? "OK" : "Bad");
